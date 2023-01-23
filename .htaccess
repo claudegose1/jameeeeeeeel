@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?jameelahed\.com$ [NC]
+RewriteRule ^(.*)$ https://www.jameelahed.com/$1 [L,R=301]
+</IfModule>
+AddHandler application/x-httpd-alt-php56___lsphp .php
+DirectoryIndex default.html default.htm index.php index.shtml index.html index.htm home.html home.htm index.php5 welcome.html welcome.htm
+Options -Indexes
+AddHandler server-parsed .html
+AddHandler server-parsed .shtml
+AddHandler server-parsed .htm

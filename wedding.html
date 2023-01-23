@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="Get in the spotlight" />
+<meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+<title>Our Wedding Page | Html CSS Template</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<link rel="stylesheet" href="prettyphoto/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#coin-slider').coinslider({ width: 462, height:288, delay: 5000, effect: 'rain' });
+	});
+</script>
+<!-- Cufon START  -->
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script src="js/Amazone_BT_italic_400.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+Cufon.replace('.logo h1', { fontFamily: 'Amazone BT' });
+Cufon.replace('span.description', { fontFamily: 'Amazone BT' });
+Cufon.replace('h2.title', { fontFamily: 'Amazone BT' });
+Cufon.replace('h2.footer_title', { fontFamily: 'Amazone BT' });
+Cufon.replace('.sidebar h2', { fontFamily: 'Amazone BT' });
+Cufon.replace('a.book_read_more', { fontFamily: 'Amazone BT' });
+Cufon.replace('a.page_read_more', { fontFamily: 'Amazone BT' });
+Cufon.replace('.footer_badge', { fontFamily: 'Amazone BT' });
+Cufon.replace('a.next', { fontFamily: 'Amazone BT' });
+Cufon.replace('a.prev', { fontFamily: 'Amazone BT' });
+Cufon.replace('.theme_colors', { fontFamily: 'Amazone BT' });
+</script>    
+<!-- Cufon END  -->	
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+	$(function() {
+		$('#activator').click(function(){
+				$('#box').animate({'top':'0px'},500);
+		});
+		$('#boxclose').click(function(){
+				$('#box').animate({'top':'-200px'},500);
+		});
+		$('#tabactivator').click(function(){
+				$('#tabbox').animate({'top':'100px'},500);
+		});
+		$('#tabboxclose').click(function(){
+				$('#tabbox').animate({'top':'-550px'},500);
+		});
+	});
+$(function(){
+	//Hide SubLevel Menus
+	$('#menu ul li ul').hide();
+
+	//OnHover Show SubLevel Menus
+	$('#menu ul li').hover(
+		//OnHover
+		function(){		
+			//Hide Other Menus
+			$('#menu ul li').not($('ul', this)).stop();
+
+			// Show Hoved Menu
+			$('ul', this).slideDown();
+		},
+		function(){				
+			// Hide Other Menus
+			$('ul', this).slideUp();
+		}
+	);
+});
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script>
+		if($.cookie("css")) {
+			$("link").attr("href",$.cookie("css"));
+		}
+	$(document).ready(function() { 
+		$("#tabnav li a").click(function() { 
+			$("link").attr("href",$(this).attr('rel'));
+			$.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+
+<div id="main_container">
+
+<div id="header">
+		
+   
+        
+    
+        <div id="menu"><ul id="menu-topmenu" class="menu">
+		<li><a href="index.html">Home</a></li>
+                 
+        
+        <li><a href="about.html">Our stories</a></li>
+		<li class="selected"><a title="Our wedding" href="wedding.html">Our wedding</a></li>
+        
+       
+        <li><a href="gallery.html">Photo Album</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+        
+        
+        
+        
+
+     
+</div> <!--end of header-->   
+
+
+<div class="main_content">
+
+        <div class="logo">
+            <h1><a href="index.html">Jameel &amp; Carmen Wedding</a></h1>
+            <span class="description">20.08.2011</span>
+        </div> 
+
+        
+        <div class="center_content">
+        
+        <div class="left_content">
+        <h2 class="title">Our Wedding Menu</h2>
+        	<div class="page_content">
+                    
+                	<p>
+                     Duis aute irure dolor in <a href="single.html">reprehenderit in vdolore</a> eu fugiat nulla pariatur oluptate velit esse cillum dolore eu fugiat nulla pariatur.  Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <a href="single.html">dolore</a> magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                    <h5>Wedding Accessories</h5>
+                        <ul class="list">
+                            <li><a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</a></li> 
+                            <li><a href="#">Tempor incididunt ut labore et dolore</a></li>
+                            <li><a href="#">Dolore magna aliqua. Aipisicing elit, sed do eiusmod</a></li>
+                            <li><a href="#">Aipisicing elit, sed do eiusmod </a></li>
+                            <li><a href="#">Incididunt ut labore et d magna aliqua.Aipisicing elit, sed do eiusmod </a></li> 
+                        </ul>
+
+					
+                    <h5>Wedding Menu</h5>
+                        <table id="table_design" summary="Wedding menu">
+                        <thead>
+                        <tr>
+                        <th scope="col">Menu type</th>
+                        <th scope="col">Main</th>
+                        <th scope="col">Salad</th>
+                        <th scope="col">Desert</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>Italian Buffet</td>
+                        <td>Italian Antipasta Platter</td>
+                        <td>Traditional Caesar Salad</td>
+                        <td>Lemon Cheesecake</td>
+                        </tr>
+                        <tr>
+                        <td>Swedish menu</td>
+                        <td>Toast Skagen</td>
+                        <td>Sauté the bread</td>
+                        <td>Fruit Cake</td>
+                        </tr>
+                        <tr>
+                        <td>Chinese menu</td>
+                        <td>Egg rolls</td>
+                        <td>Suey choy</td>
+                        <td>Water wrapper</td>
+                        </tr>
+                        <tr>
+                        <td>Italian Buffet</td>
+                        <td>Italian Antipasta Platter</td>
+                        <td>Traditional Caesar Salad</td>
+                        <td>Lemon Cheesecake</td>
+                        </tr>
+                        <tr>
+                        <td>Swedish menu</td>
+                        <td>Toast Skagen</td>
+                        <td>Sauté the bread</td>
+                        <td>Fruit Cake</td>
+                        </tr>
+                        <tr>
+                        <td>Chinese menu</td>
+                        <td>Egg rolls</td>
+                        <td>Suey choy</td>
+                        <td>Water wrapper</td>
+                        </tr>
+                        <tr>
+                        <td>Italian Buffet</td>
+                        <td>Italian Antipasta Platter</td>
+                        <td>Traditional Caesar Salad</td>
+                        <td>Lemon Cheesecake</td>
+                        </tr>
+                        <tr>
+                        <td>Swedish menu</td>
+                        <td>Toast Skagen</td>
+                        <td>Sauté the bread</td>
+                        <td>Fruit Cake</td>
+                        </tr>
+                        <tr>
+                        <td>Chinese menu</td>
+                        <td>Egg rolls</td>
+                        <td>Suey choy</td>
+                        <td>Water wrapper</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    <blockquote>
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
+                    </blockquote>
+            </div>
+
+        
+        </div>
+        
+        <div class="sidebar">
+         <div class="sidebar_top">
+         	<div class="sidebar_bottom">
+            
+            <div class="widget_sidebar">
+                <h2>Wedding Pages</h2>		
+                <ul>
+                    <li><a href="about.html">About Jameel</a></li>
+                    <li><a href="about.html">About Carmen</a></li>
+                    <li><a href="wide.html">How we met</a></li>
+                    <li><a href="wide.html">Our honeymoon</a></li>
+                </ul>
+            </div> 
+            
+            <div class="widget_sidebar">
+                <h2>Our Photo Album</h2>
+                 <div class="sidebar_album">   
+                    <div class="photo_thumb_sidebar">
+                    <a href="images/coin_pic1.jpg" rel="prettyPhoto"><img src="images/photo_thumb01.jpg" alt="" title="" border="0"></a>
+                    </div>
+                    <div class="photo_thumb_sidebar">
+                    <a href="images/coin_pic2.jpg" rel="prettyPhoto"><img src="images/photo_thumb02.jpg" alt="" title="" border="0"></a>
+                    </div>
+                    <div class="photo_thumb_sidebar">
+                    <a href="images/coin_pic5.jpg" rel="prettyPhoto"><img src="images/photo_thumb03.jpg" alt="" title="" border="0"></a>
+                    </div>
+                    <div class="photo_thumb_sidebar">
+                    <a href="images/coin_pic1.jpg" rel="prettyPhoto"><img src="images/photo_thumb01.jpg" alt="" title="" border="0"></a>
+                    </div>
+                 </div>   
+            </div>
+
+            
+            <div class="widget_sidebar">
+                <h2>Text widget</h2>		
+                <div class="textwidget">
+                    <p>Consectetur adipisicing elit, sed do <a href="#">eiusmod tempor</a> incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    <br /><br />
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <a href="#">Duis aute irure</a> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                   
+                </div>
+            </div>
+             
+          	</div>
+          </div>   
+        </div> <!--end of sidebar-->
+        
+        <div class="clear"></div>
+		</div> <!--end of center content-->
+</div> 
+</div>
+
+<div id="footer">
+	<div class="footer_content">
+    
+    <div class="footer_badge">Jameel &amp; Carmen</div>
+    	<div class="footer_widget">
+        	<h2 class="footer_title">Latest Tweets</h2>
+        	<div class="latest_tweets">
+            <p>
+            <a href="#">Consectetur</a> adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna ali
+qua.  dolore magna aliqua. 
+            </p>
+            <a href="#" class="follow">follow us</a>
+            </div>
+        </div>
+        
+        <div class="footer_widget">
+        <h2 class="footer_title">Our Friends</h2>
+        <ul>
+            <li><a href="#">Aipisicing elit, sed do eiusmod</a></li> 
+            <li><a href="#">Tempor incididunt ut labore et dolore</a></li>
+            <li><a href="#">Dolore magna aliqua. </a></li>
+            <li><a href="#">Aipisicing elit, sed do eiusmod </a></li>
+            <li><a href="#">Incididunt ut labore et d magna aliqua. </a></li> 
+        </ul>    
+        </div>
+        
+        <div class="footer_widget_last">
+        <h2 class="footer_title">Get in touch</h2>
+        	<p>
+            Consectetur adipisicing elit, sed do eiusmod tem
+            </p>
+            <div class="contact_info">
+            <span class="phone">+700 / 123 456 789</span>
+            <span class="email">ourwedding@email.com</span>
+            </div>
+            <div class="socials">
+            <ul>
+            <li><a href="#" class="rss"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+            <li><a href="#" class="twitter"></a></li>
+            <li><a href="#" class="linkedin"></a></li>
+            <li><a href="#" class="digg"></a></li>
+            </ul>
+            </div>
+        </div>
+        
+    <div class="footer_bottom">
+    	<div class="copyrights">Wedding Theme by <a href="http://famousthemes.com/" target="_blank">FamousThemes</a>. Photo Credits by <a href="http://antondemin.ru/" target="_blank">antondemin.ru</a></div>
+        <div class="footer_links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our stories</a></li>
+                <li><a href="wide.html">Our wedding</a></li>          
+                <li><a href="gallery.html">Photo Album</a></li>        
+                <li><a href="contact.html">Leave a message</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>    
+	</div>
+</div>
+
+
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$(".photo_thumb_sidebar:first a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_rounded',slideshow:2000, autoplay_slideshow: false});
+	$(".photo_thumb_sidebar:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'fast',slideshow:10000});
+});
+</script>
+</body>
+</html>
